@@ -1,0 +1,27 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "globalEnv": ["PORT", "NODE_ENV"],
+  "pipeline": {
+    "build": {
+      "outputs": ["dist/**", "storybook-static/**"],
+      "dependsOn": ["^build"]
+    },
+    "test": {
+      "outputs": ["coverage/**"],
+      "dependsOn": []
+    },
+    "lint": {},
+    "dev": {
+      "cache": false,
+      "persistent": true,
+      "dependsOn": [
+        "up4wjs-errors#build",
+        "up4wjs-utils#build",
+        "up4wjs-providers#build"
+      ]
+    },
+    "clean": {
+      "cache": false
+    }
+  }
+}

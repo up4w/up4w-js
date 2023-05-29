@@ -1,0 +1,50 @@
+{
+  "name": "up4w-service",
+  "version": "0.2.0",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "sideEffects": false,
+  "description": "A javaScript library run UP4W program to start UP4W p2p network",
+  "license": "MIT",
+  "files": [
+    "dist/**",
+    "addons/**"
+  ],
+  "scripts": {
+    "build": "tsup ",
+    "dev": "tsup --watch",
+    "lint": "eslint \"src/**/*.ts*\"",
+    "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.9",
+    "@types/react-dom": "^18.0.4",
+    "eslint": "^8.15.0",
+    "react": "^18.1.0",
+    "tsup": "^6.7.0",
+    "typescript": "^4.5.3"
+  },
+  "dependencies": {
+    "eventemitter3": "^5.0.0",
+    "koffi": "^2.3.19",
+    "minimist": "^1.2.8",
+    "up4wjs-errors": "*",
+    "eslint-config-up4wjs": "*",
+    "up4wjs-providers": "*",
+    "up4wjs-utils": "*",
+    "up4wjs-tsconfig": "*"
+  },
+  "keywords": [
+    "up4w",
+    "up4wjs",
+    "gpt4w"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": "https://github.com/up4w/up4w-js",
+  "bugs": {
+    "url": "https://github.com/up4w/up4w-js/issues"
+  }
+}

@@ -1,0 +1,5 @@
+{
+  "extends": "up4wjs-tsconfig/compatible.json",
+  "include": ["."],
+  "exclude": ["dist", "build", "node_modules"]
+}

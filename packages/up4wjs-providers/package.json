@@ -1,0 +1,40 @@
+{
+  "name": "up4wjs-providers",
+  "version": "1.1.0",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "sideEffects": false,
+  "license": "MIT",
+  "files": [
+    "dist/**"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "lint": "eslint \"src/**/*.ts*\"",
+    "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-up4wjs": "*",
+    "tsup": "^5.10.1",
+    "typescript": "^4.5.3",
+    "up4wjs-tsconfig": "*"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "@types/qs": "^6.9.7",
+    "@types/websocket": "^1.0.5",
+    "buffer": "^6.0.3",
+    "cross-fetch": "^3.1.6",
+    "eventemitter3": "^5.0.0",
+    "js-base64": "^3.7.5",
+    "qs": "^6.11.1",
+    "up4wjs-errors": "*",
+    "up4wjs-utils": "*",
+    "websocket": "^1.0.34"
+  }
+}

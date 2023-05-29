@@ -1,0 +1,8 @@
+{
+  "name": "up4wjs-tsconfig",
+  "version": "1.1.0",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  }
+}

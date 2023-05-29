@@ -1,0 +1,54 @@
+{
+  "name": "up4w-js",
+  "version": "1.1.0",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "sideEffects": false,
+  "description": "A javaScript library interact with UP4W Network",
+  "license": "MIT",
+  "files": [
+    "dist/**"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "lint": "eslint \"src/**/*.ts*\"",
+    "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist"
+  },
+  "devDependencies": {
+    "up4wjs-tsconfig": "*",
+    "@types/react": "^18.0.9",
+    "@types/react-dom": "^18.0.4",
+    "eslint": "^8.15.0",
+    "eslint-config-up4wjs": "*",
+    "react": "^18.1.0",
+    "tsup": "^5.10.1",
+    "typescript": "^4.5.3"
+  },
+  "dependencies": {
+    "up4wjs-utils": "*",
+    "up4wjs-providers": "*",
+    "up4wjs-errors": "*",
+    "@types/localforage": "^0.0.34",
+    "@types/nedb": "^1.8.13",
+    "eventemitter3": "^5.0.0",
+    "keyv": "^4.5.2",
+    "keyv-file": "^0.2.0",
+    "localforage": "^1.10.0",
+    "nedb": "^1.8.0",
+    "util": "^0.12.5"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "up4w",
+    "up4wjs",
+    "gpt4w"
+  ],
+  "repository": "https://github.com/up4w/up4w-js",
+  "bugs": {
+    "url": "https://github.com/up4w/up4w-js/issues"
+  }
+}
